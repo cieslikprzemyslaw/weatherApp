@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Day from './Day';
 
 const Weather = ({ idCity, url, apiKey }) => {
 
@@ -12,18 +13,27 @@ const Weather = ({ idCity, url, apiKey }) => {
                 setLocation(data.SiteRep.DV.Location);
                 setIsLoading(false)
             })
-    }, [idCity])
+    }, [apiKey, idCity, url])
 
     if (isLoading) {
         return (
             <h2>Please write location and click check</h2>
         )
     } else {
+        const days = location.Period
         return (
             <div>
                 <p>{location.name}</p>
                 <p>{location.country}</p>
-                {console.log(location.Period)}
+                {days.map(element => (
+                    <Day 
+                    key={element.value}
+                    days={days}
+                    hourlyForecast={element.Rep}
+                    date={element.value}
+                    />
+                ))}
+                {/* {console.log(location.Period)} */}
             </div>
         )
     }

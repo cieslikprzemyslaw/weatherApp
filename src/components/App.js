@@ -2,8 +2,6 @@ import React, { useState} from 'react';
 import Form from './Form';
 import Weather from './Weather';
 import useSyncFetch from '../services/useSyncFetch';
-import useAsyncFetch from '../services/useAsyncFetch';
-
 
 const App = () => {
   const url = "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json";
