@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Day from './Day';
+import Forecast from './Forecast';
 
 const Weather = ({ idCity, url, apiKey }) => {
 
@@ -20,23 +20,16 @@ const Weather = ({ idCity, url, apiKey }) => {
             <h2>Please write location and click check</h2>
         )
     } else {
-        const days = location.Period
         return (
-            <div>
-                <p>{location.name}</p>
-                <p>{location.country}</p>
-                {days.map(element => (
-                    <Day 
-                    key={element.value}
-                    days={days}
-                    hourlyForecast={element.Rep}
-                    date={element.value}
-                    />
-                ))}
-                {/* {console.log(location.Period)} */}
-            </div>
+            <Forecast 
+            location={location}
+            
+            />
         )
     }
 }
+// //Bug is with rerender should be days.map(element => {
+//     element.Rep.map(day => )
+// }) 
 
 export default Weather;
