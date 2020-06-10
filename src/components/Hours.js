@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 
 const Hours = ({ hours }) => {
-    let temperature;
-    let wind;
-    let visibility;
-    let UV;
-    let time;
-    let pop;
+
 
     const hour = hours.map(element => {
+        let temperature;
+        let wind;
+        let visibility;
+        let UV;
+        let time;
+        let pop;
 
         switch (element.V) {
             case "VP":
@@ -47,21 +48,27 @@ const Hours = ({ hours }) => {
         }
 
         temperature = element.T;
-        time = element.$/60;
+        time = element.$ / 60;
         wind = element.S;
         pop = element.Pp;
+
+        return (
+            <div>
+                <p>Time {time < 10 ? "0" + time + ":00" : time + ":00"}</p>
+                <p>Temperature: {temperature} Celcius</p>
+                <p>Wind: {wind} mph</p>
+                <p>Visibility: {visibility}</p>
+                <p>Max UV index: {UV}</p>
+                <p>Precipitation Probability: {pop} %</p>
+            ----------------------------------------------
+            </div>
+        )
     })
 
     return (
-        <div>
-            <p>Time {time < 10 ? "0" + time + ":00" : time + ":00"}</p>
-            <p>Temperature: {temperature} Celcius</p>
-            <p>Wind: {wind} mph</p>
-            <p>Visibility: {visibility}</p>
-            <p>Max UV index: {UV}</p>
-            <p>Precipitation Probability: {pop} %</p>
-            ----------------------------------------------
-        </div>
+        <>
+        { hour }
+        </>
     );
 }
 
