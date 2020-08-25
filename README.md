@@ -1,4 +1,4 @@
-##Project when I wanted try working with API but not simle API like much more free API's for begginers.  
+## Project when I wanted try working with API but not simle API like much more free API's for begginers.  
 Here We have API from MET Office. They have over 5 000 locations with weather forecast. Some locations like my city where I living right now don't have forecast.  
 
 **What have I learned:**  
