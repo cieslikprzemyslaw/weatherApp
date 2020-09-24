@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/weatherApp-metofficeApi/static/css/main.ed48690a.chunk.css",
+    "main.js": "/weatherApp-metofficeApi/static/js/main.9d532150.chunk.js",
+    "main.js.map": "/weatherApp-metofficeApi/static/js/main.9d532150.chunk.js.map",
+    "runtime-main.js": "/weatherApp-metofficeApi/static/js/runtime-main.6b3fccbd.js",
+    "runtime-main.js.map": "/weatherApp-metofficeApi/static/js/runtime-main.6b3fccbd.js.map",
+    "static/js/2.bbf0a126.chunk.js": "/weatherApp-metofficeApi/static/js/2.bbf0a126.chunk.js",
+    "static/js/2.bbf0a126.chunk.js.map": "/weatherApp-metofficeApi/static/js/2.bbf0a126.chunk.js.map",
+    "index.html": "/weatherApp-metofficeApi/index.html",
+    "precache-manifest.7c239359480d458ee485e6ee30b1b420.js": "/weatherApp-metofficeApi/precache-manifest.7c239359480d458ee485e6ee30b1b420.js",
+    "service-worker.js": "/weatherApp-metofficeApi/service-worker.js",
+    "static/css/main.ed48690a.chunk.css.map": "/weatherApp-metofficeApi/static/css/main.ed48690a.chunk.css.map",
+    "static/js/2.bbf0a126.chunk.js.LICENSE.txt": "/weatherApp-metofficeApi/static/js/2.bbf0a126.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b3fccbd.js",
+    "static/js/2.bbf0a126.chunk.js",
+    "static/css/main.ed48690a.chunk.css",
+    "static/js/main.9d532150.chunk.js"
+  ]
+}
