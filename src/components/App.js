@@ -1,7 +1,8 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import Form from './Form';
 import Weather from './Weather';
 import useSyncFetch from '../services/useSyncFetch';
+import '../css/index.css'
 
 const App = () => {
   const url = "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json";
@@ -9,14 +10,16 @@ const App = () => {
   const [idCity, setIdCity] = useState();
 
   const data = useSyncFetch(url + "/sitelist?" + key);
-
+  console.log(data)
   return (
     <div className="wrapper">
       <Form
+        className="form"
         setIdCity={setIdCity}
         data={data}
       />
-      <Weather 
+      <Weather
+        className="weather"
         idCity={idCity}
         url={url}
         apiKey={key}

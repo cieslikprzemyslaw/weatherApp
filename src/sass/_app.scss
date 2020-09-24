@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.form{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.weather{
+    text-align: center;
+
+    &__h2{
+        text-align: center;
+    }
+}
+
+.forecast{
+    text-align: center;
+
+    &__location{
+        max-width: 25%;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        &:nth-child(1){
+            border-top: 2px  solid rgb(12, 166, 238);
+            border-left: 2px  solid rgb(12, 166, 238);
+            border-right: 2px  solid rgb(12, 166, 238);
+        }
+        &:nth-child(2){
+            border-left: 2px  solid rgb(12, 166, 238);
+            border-right: 2px  solid rgb(12, 166, 238);
+            border-bottom: 2px  solid rgb(12, 166, 238);
+        }
+    }
+}

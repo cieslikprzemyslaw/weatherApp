@@ -53,13 +53,13 @@ const Hours = ({ hours }) => {
         pop = element.Pp;
 
         return (
-            <div>
-                <p>Time {time < 10 ? "0" + time + ":00" : time + ":00"}</p>
-                <p>Temperature: {temperature} Celcius</p>
-                <p>Wind: {wind} mph</p>
-                <p>Visibility: {visibility}</p>
-                <p>Max UV index: {UV}</p>
-                <p>Precipitation Probability: {pop} %</p>
+            <div className="forecast__hour">
+                <p className="forecast__data">Time {time < 10 ? "0" + time + ":00" : time + ":00"}</p>
+                <p className="forecast__data">Temperature: {temperature} Celcius</p>
+                <p className="forecast__data">Wind: {wind} mph</p>
+                <p className="forecast__data">Visibility: {visibility}</p>
+                <p className="forecast__data">Max UV index: {UV}</p>
+                <p className="forecast__data">Precipitation Probability: {pop} %</p>
             ----------------------------------------------
             </div>
         )

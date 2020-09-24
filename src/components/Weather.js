@@ -17,7 +17,7 @@ const Weather = ({ idCity, url, apiKey }) => {
 
     if (isLoading) {
         return (
-            <h2>Please write location and click check</h2>
+            <h2 className="weather__h2">Please write location and click check</h2>
         )
     } else {
         return (

@@ -11,10 +11,10 @@ const Day = ({ days, date, hourlyForecast }) => {
          />
     ))
     return (
-        <div>
-            <p>{dayDate}</p>
+        <div className="forecast__day">
+            <p className="forecast__date">{dayDate}</p>
             {forecastForHour}
-            {console.log(hourlyForecast, "Hours")}
+            {/* {console.log(hourlyForecast, "Hours")} */}
         </div>
     );
 }

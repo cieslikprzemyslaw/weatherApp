@@ -5,9 +5,9 @@ const Forecast = ({location}) => {
     const days = location.Period
 
     return ( 
-        <div>
-        <p>{location.name}</p>
-        <p>{location.country}</p>
+        <div className="forecast">
+        <p className="forecast__location">{location.name}</p>
+        <p className="forecast__location">{location.country}</p>
         {days.map(element => (
             <Day 
             key={element.value}
@@ -16,7 +16,7 @@ const Forecast = ({location}) => {
             date={element.value}
             />
         ))}
-        {console.log(days, "Days")}
+        {/* {console.log(days, "Days")} */}
     </div>
      );
 }

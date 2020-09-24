@@ -27,7 +27,7 @@ const Form = ({setIdCity, data}) => {
     }
     
     return (
-        <form>
+        <form className="form">
             <label htmlFor="location">Location: </label>
             <input 
             onChange={handleChange} 
